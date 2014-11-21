@@ -16,7 +16,7 @@ $(document).ready(function() {
       top: "-10em"
     }, 500, function(){
     $('#title').html('hey you!');
-    $('#body').html('Download hey you now on the app store!');
+    $('#body').html('Download hey you soon on the app store!');
     $('#user').html('- hey you dev team');
     });
     $('#post').animate({
