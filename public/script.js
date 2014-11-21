@@ -17,6 +17,13 @@ $(document).ready(function() {
     $('#user').html('- hey you dev team');
   });
   
+  $('#post').click(function() {
+    $('#post').animate({
+      top: "-10em"
+    }, 500, function() {
+    });
+  });
+  
   function initialize() {
     var mapOptions = {
       center: { lat: 47.621, lng: -122.332},
@@ -25,7 +32,8 @@ $(document).ready(function() {
       navigationControl: false,
       streetViewControl: false,
       zoomControl: false,
-      panControl: false
+      panControl: false,
+      backgroundColor: 'black'
     };
     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
@@ -57,11 +65,19 @@ $(document).ready(function() {
               color: dot.color
             });
             google.maps.event.addListener(marker, 'click', function() {
-              map.setCenter(marker.getPosition());
-              $('#title').html(this.title);
-              $('#body').html(this.text);
-              $('#user').html('- ' + this.user);
-              if(this.color) $('#post').css("border-color", this.color);
+              map.panTo(marker.getPosition());
+              var that = this;
+              $('#post').animate({
+                top: "-10em"
+              }, 500, function(){
+                $('#title').html(that.title);
+                $('#body').html(that.text);
+                $('#user').html('- ' + that.user);
+                if(that.color) $('#post').css("border-color", that.color);
+              });
+              $('#post').animate({
+                top: "+1em"
+              }, 500, function(){});
             });
           });
         },
