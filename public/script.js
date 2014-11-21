@@ -12,9 +12,16 @@ $(document).ready(function() {
     $('#heyyou').fadeTo('fast', 0.4);
   });
   $('#heyyou').click(function() {
+    $('#post').animate({
+      top: "-10em"
+    }, 500, function(){
     $('#title').html('hey you!');
     $('#body').html('Download hey you now on the app store!');
     $('#user').html('- hey you dev team');
+    });
+    $('#post').animate({
+      top: "+1em"
+    }, 500, function(){});
   });
   
   $('#post').click(function() {
