@@ -13,7 +13,7 @@ $(document).ready(function() {
   });
   $('#heyyou').click(function() {
     $('#post').animate({
-      top: "-10em"
+      top: "-20em"
     }, 500, function(){
     $('#title').html('hey you!');
     $('#body').html('Download hey you soon on the app store!');
@@ -26,7 +26,7 @@ $(document).ready(function() {
   
   $('#post').click(function() {
     $('#post').animate({
-      top: "-10em"
+      top: "-20em"
     }, 500, function() {
     });
   });
@@ -75,7 +75,7 @@ $(document).ready(function() {
               map.panTo(marker.getPosition());
               var that = this;
               $('#post').animate({
-                top: "-10em"
+                top: "-20em"
               }, 500, function(){
                 $('#title').html(that.title);
                 $('#body').html(that.text);
