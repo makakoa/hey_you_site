@@ -96,8 +96,6 @@ $(document).ready(function() {
     };
     getHYs();
   }
-
-  google.maps.event
   
   google.maps.event.addDomListener(window, 'load', initialize);
 });
