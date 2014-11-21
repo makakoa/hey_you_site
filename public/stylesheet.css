@@ -13,22 +13,34 @@ html, body, #map-canvas {
   border-radius: 25px;
   line-height: 30%;
   padding: 0.3em;
-  opacity: 0.6;
+  opacity: 0.4;
   top: 1em;
   left: 1em;
   font-size: 3em;
 }
 
-h1 {
+#title {
   font-family: Courier;
-  font-size:3em;
+  font-size:2em;
 }
 
-p {
+#body {
   font-family: Courier;
+  font-size: 1em;
+}
+
+#user {
+  font-family: Courier;
+  font-size: 0.5em;
+  text-align: right;
+}
+
+#heyyou {
+  z-index: 1;
+  position: fixed;
+  opacity: 0.6;
+  bottom: 0.5em;
+  right: 0.5em;
   font-size: 3em;
-}
-
-p {
   font-family: Courier;
-  font-size: 2em;
+}

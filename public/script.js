@@ -1,10 +1,21 @@
 $(document).ready(function() {
   $('#post').mouseenter(function() {
         $('#post').fadeTo('fast', 1);
-    });
-    $('#post').mouseleave(function() {
-        $('#post').fadeTo('fast', 0.6);
-    });
+  });
+  $('#post').mouseleave(function() {
+    $('#post').fadeTo('fast', 0.4);
+  });
+  $('#heyyou').mouseenter(function() {
+        $('#heyyou').fadeTo('fast', 1);
+  });
+  $('#heyyou').mouseleave(function() {
+    $('#heyyou').fadeTo('fast', 0.4);
+  });
+  $('#heyyou').click(function() {
+    $('#title').html('hey you!');
+    $('#body').html('Download hey you now on the app store!');
+    $('#user').html('- hey you dev team');
+  });
   
   function initialize() {
     var mapOptions = {
@@ -47,10 +58,10 @@ $(document).ready(function() {
             });
             google.maps.event.addListener(marker, 'click', function() {
               map.setCenter(marker.getPosition());
-              map.setZoom(5);
               $('#title').html(this.title);
               $('#body').html(this.text);
-              $('#post').css("border-color", this.color);
+              $('#user').html('- ' + this.user);
+              if(this.color) $('#post').css("border-color", this.color);
             });
           });
         },
