@@ -1,0 +1,28 @@
+html, body, #map-canvas {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+#post {
+  z-index: 1;
+  position: fixed;
+  background-color: white;
+  border: 0.2em solid;
+  border-radius: 25px;
+  line-height: 30%;
+  padding: 0.3em;
+  opacity: 0.6;
+  top: 1em;
+  left: 1em;
+  font-size: 3em;
+}
+
+h1 {
+  font-family: Courier;
+}
+
+p {
+  font-family: Courier;
+}
