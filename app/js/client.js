@@ -8,6 +8,7 @@ var app = angular.module('app', ['ngRoute']);
 //directives
 //services
 //controllers
+require('./controllers/mapCtrl.js')(app);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
