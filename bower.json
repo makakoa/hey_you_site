@@ -1,0 +1,24 @@
+{
+  "name": "hey_you_web",
+  "version": "0.0.0",
+  "homepage": "https://github.com/makakoa/hey_you_site",
+  "authors": [
+    "makakoa <makakoa15@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.6",
+    "angular-route": "~1.3.6"
+  }
+}
