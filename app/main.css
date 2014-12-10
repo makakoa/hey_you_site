@@ -1,0 +1,48 @@
+.angular-google-map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#post {
+z-index: 1;
+position: fixed;
+background-color: white;
+border: 0.2em solid;
+border-radius: 25px;
+line-height: 30%;
+padding: 0.3em;
+opacity: 0.4;
+top: 1em;
+left: 1em;
+font-size: 3em;
+}
+
+#title {
+font-family: Courier;
+font-size:2em;
+}
+
+#body {
+font-family: Courier;
+font-size: 1em;
+}
+
+#user {
+font-family: Courier;
+font-size: 0.5em;
+text-align: right;
+}
+
+#heyyou {
+z-index: 1;
+position: fixed;
+opacity: 0.6;
+bottom: 0.5em;
+right: 0.5em;
+font-size: 3em;
+font-family: Courier;
+}
