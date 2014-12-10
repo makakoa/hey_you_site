@@ -15,10 +15,10 @@ border: 0.2em solid;
 border-radius: 25px;
 line-height: 30%;
 padding: 0.3em;
-opacity: 0.4;
+opacity: 1;
 top: 1em;
 left: 1em;
-font-size: 2em;
+font-size: 3em;
 }
 
 #title {
@@ -28,12 +28,12 @@ font-size:1em;
 
 #body {
 font-family: Courier;
-font-size: 1em;
+font-size: 0.5em;
 }
 
 #user {
 font-family: Courier;
-font-size: 0.5em;
+font-size: 0.3em;
 text-align: right;
 }
 
