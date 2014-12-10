@@ -1,8 +1,9 @@
 <div data-ng-controller="mapCtrl" data-ng-init="index()">
-  <div id="post" data-ng-show="dot.show" data-ng-click="dot.show=false">
+  <div id="post" data-ng-show="dot.show" data-ng-click="dot.show=false" data-ng-style="poststyle">
     <h1 id="title">{{dot.title}}</h1>
     <p id="body">{{dot.text}}</p>
     <p id="user">{{dot.user}}</p>
+    <p id="postinfo">Click to hide</p>
   </div>
   <div id="heyyou" data-ng-click="advertise()"><img src="https://trello-attachments.s3.amazonaws.com/5463dabb4d0a4cc1c3a3b442/1024x1024/f8cb556ce1fdc20acf8f3348cfb06182/iTunesArtwork%402x-3.png" style="width:100px"></div>
   <ui-gmap-google-map zoom="map.zoom" center="map.center" options="map.options"></ui-gmap-google-map>

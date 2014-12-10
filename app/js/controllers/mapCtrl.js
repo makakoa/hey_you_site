@@ -29,10 +29,10 @@ module.exports = function(app) {
           });
           maps.event.addListener(marker, 'click', function() {
             maps[0].panTo(marker.getPosition());
+            $scope.poststyle = {'border-color': this.color};
             $scope.dot.title = this.title;
             $scope.dot.text = this.text;
             $scope.dot.user = this.user;
-            $scope.dot.color = this.color;
             $scope.dot.show = true;
           });
         });
@@ -53,7 +53,7 @@ module.exports = function(app) {
 
     $scope.map.center = {
       latitude: 47.621,
-      longitude:-122.332
+      longitude: 0
     };
     $scope.map.zoom = 2;
     $scope.control = {};
@@ -65,6 +65,8 @@ module.exports = function(app) {
       $scope.dot.title = 'hey you!';
       $scope.dot.text = 'Download hey you soon on the app store!';
       $scope.dot.user = 'hey you dev team';
+      $scope.poststyle = {'border-color': 'green'};
+      $scope.dot.show = true;
     };
   }]);
 };
