@@ -13,9 +13,6 @@ var app = angular.module('app', ['ngRoute', 'uiGmapgoogle-maps']).config(
   }]
 );
 
-//directives
-//services
-//controllers
 require('./controllers/mapCtrl.js')(app);
 
 app.config(['$routeProvider', function($routeProvider) {
